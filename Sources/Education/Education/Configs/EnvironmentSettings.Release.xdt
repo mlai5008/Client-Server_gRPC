@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EnvironmentSettings xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+	<Server xdt:Transform="Replace">
+		<Name>MainServer</Name>
+		<Host>0.0.0.0</Host>
+		<Port>49101</Port>
+	</Server>
+	<ChildrenServices xdt:Transform="Replace">
+		<Service name="DbService" host="localhost" port="49102" />
+		<Service name="PlcService" host="localhost" port="49103" />
+		<Service name="ImgWService" host="localhost" port="49104" />
+		<Service name="FaceDetectionService" host="localhost" port="49105" />
+	</ChildrenServices>
+</EnvironmentSettings>

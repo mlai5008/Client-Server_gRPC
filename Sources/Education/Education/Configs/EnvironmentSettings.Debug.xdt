@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EnvironmentSettings xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+	<Server xdt:Transform="Replace">
+		<Name>SomeService</Name>
+		<Host>192.168.105.11</Host>
+		<Port>5000</Port>
+	</Server>
+	<ChildrenServices xdt:Transform="Replace">
+		<Service name="DbService" host="192.168.105.11" port="5001"/>
+		<Service name="ImgMService" host="192.168.105.11" port="5002"/>
+	</ChildrenServices>
+</EnvironmentSettings>

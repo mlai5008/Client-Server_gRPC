@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+import "Education.Common.ServiceContracts/Contracts/Protos/ServiceEntityContract.proto";
+
+option csharp_namespace = "Education.Common.ServiceContracts.ServiceContract";
+
+//package EducationCommon;
+
+service ServiceContract{
+	rpc Connect(EmptyContract) returns (ConnectResponse);
+}

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.14.0" />
+    <PackageReference Include="Grpc" Version="2.35.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.35.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+	<ItemGroup>
+		<Protobuf Include="Education.Common.ServiceContracts/Contracts/Protos/ServiceEntityContract.proto" ProtoRoot=".." Link="Contracts/Protos/ServiceEntityContract.proto" />
+		<Protobuf Include="Education.Common.ServiceContracts/Contracts/Protos/ServiceContract.proto" ProtoRoot=".." Link="Contracts/Protos/ServiceContract.proto" />
+	</ItemGroup>
+
+</Project>

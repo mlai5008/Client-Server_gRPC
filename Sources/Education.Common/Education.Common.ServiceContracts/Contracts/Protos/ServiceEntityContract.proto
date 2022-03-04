@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Education.Common.ServiceContracts.ServiceEntityContract";
+
+message EmptyContract{}
+
+message ErrorContract{
+	bool has_error = 1;
+	string details = 2;}
+
+message ConnectResponse{
+	bool connection_result = 1;
+	ServiceState service_state = 2;
+	ErrorContract error = 3;}
+
+enum ServiceState{
+	SERVICE_STATE_UNSPECIFIED = 0;
+	SERVICE_STATE_DISCONNECTED = 1;
+	SERVICE_STATE_CONNECTED = 2;
+	SERVICE_STATE_ACTIVE = 3;}
