@@ -1,5 +1,6 @@
 ﻿using Education.Common.ServiceContracts.ServiceContract;
 using Education.Common.ServiceContracts.ServiceEntityContract;
+using Education.Communication.Logging;
 using Grpc.Core;
 using System;
 using System.Threading.Tasks;
@@ -22,7 +23,7 @@ namespace Education.Communication.Services
         #region Methods
         public override Task<ConnectResponse> Connect(EmptyContract request, ServerCallContext context)
         {
-            Console.WriteLine("Client connected");
+            LoggingManager.Logger.Information("Client connected at {dateTime}", DateTime.Now);
             return Task.FromResult(new ConnectResponse(){ConnectionResult = true, ServiceState = ServiceState.Connected}) ;
         } 
         #endregion

@@ -3,12 +3,12 @@
 	<Server xdt:Transform="Replace">
 		<Name>MainServer</Name>
 		<Host>0.0.0.0</Host>
-		<Port>49101</Port>
+		<Port>5008</Port>
 	</Server>
 	<ChildrenServices xdt:Transform="Replace">
-		<Service name="DbService" host="localhost" port="49102" />
-		<Service name="PlcService" host="localhost" port="49103" />
-		<Service name="ImgWService" host="localhost" port="49104" />
-		<Service name="FaceDetectionService" host="localhost" port="49105" />
+		<Service name="DbService" host="localhost" port="5000" />
+		<Service name="PlcService" host="localhost" port="5001" />
+		<Service name="ImgWService" host="localhost" port="5003" />
+		<Service name="FaceDetectionService" host="localhost" port="5004" />
 	</ChildrenServices>
 </EnvironmentSettings>

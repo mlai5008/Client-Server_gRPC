@@ -9,8 +9,8 @@ namespace Education.Client
     class Program
     {
         #region Consts
-        private const string Host = "192.168.105.11";
-        private const int Port = 5000;
+        private const string Host = "127.0.0.1";
+        private const int Port = 5008;
         #endregion
 
         static async Task Main()
